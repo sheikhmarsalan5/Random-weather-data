@@ -356,7 +356,7 @@ if __name__ == "__main__":
     
 
 
-# In[235]:
+# In[236]:
 
 import random
 def stationmapping(x):
@@ -420,7 +420,7 @@ def generate_data(i):
     dy, mnt, yr, sec, min, hr = map(str, [dy, mnt, yr, sec, min, hr])
     local_time = '%s-%s-%sT%s:%s:%sZ' %(yr, mnt.zfill(2), dy.zfill(2), hr.zfill(2), min.zfill(2), sec.zfill(2))  
     st1 = stationmapping(longitude[i])
-    return '|'.join(map(str, [st1, local_time, cnd, temp, choice(pressure), hmd, solar3]))
+    return '|'.join(map(str, [st1, local_time, cnd, temp, choice(pressure), hmd]))
        # print ('|'.join(map(str, [st1, local_time, cnd, temp, choice(pressure), hmd, solar2[i]])))
 
        
